@@ -8,6 +8,7 @@ import json
 import tiktoken
 import os
 
+#remove illegal chars
 def clean_text(text):
     text = re.sub(r'[\x00-\x1F\x7F]', '', text)
     text = re.sub(r'[^\x20-\x7E]', '', text)

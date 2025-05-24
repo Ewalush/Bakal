@@ -62,7 +62,7 @@ print(chunks[0])
 print("\n\n")
 
 embeddings = embedding_model.encode(chunks)
-print(embeddings[0])
+print("Embeddings \n", embeddings[0])
 
 if collection.count() == 0:
     ids = [f"chunk_{i}" for i in range(len(chunks))]
@@ -72,10 +72,11 @@ else:
     print("ChromaDB esosi dati jau ir")
     
 print("\n\n")
-prompt = "Can you give me a technical report on DeepSeekv3?"
 
+prompt = "Can you give me a technical report on DeepSeekv3?"
 results = collection.query(query_texts=[prompt], n_results=3) # Top 3 results to promt
 top_results = results['documents'][0]
+
 #print(top_results[0])
 
 ######################################################################################## STEP 1 DONE CAN CUT OFF HERE POSSIBLE

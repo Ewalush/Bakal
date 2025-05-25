@@ -81,11 +81,10 @@ top_results = results['documents'][0]
 
 ######################################################################################## STEP 1 DONE CAN CUT OFF HERE POSSIBLE
 
-full_prompt = f"Context:\n{top_results[0]}\n\nQuestion: {prompt}\nAnswer:"
+full_prompt = f"Context:\n{top_results}\n\nQuestion: {prompt}\nAnswer:"
 tokenizer = tiktoken.get_encoding("cl100k_base")  # Approx match for LLaMA
 tokens = tokenizer.encode(full_prompt)
 print(f"Token count: {len(tokens)}")
-print("\n\n")
 print("\n\n")
 
 try:
@@ -105,34 +104,3 @@ except Exception as e:
 print("\n[OUTPUT]")
 print(f"Q: {prompt}")
 print(f"A: {answer}")
-
-
-"""
-    https://docs.trychroma.com/docs/embeddings/embedding-functions
-    
-    https://docs.trychroma.com/docs/overview/getting-started
-    
-    Model
-    architecture        llama
-    parameters          8.0B
-    context length      8192
-    embedding length    4096
-    quantization        Q4_0
-
-  Capabilities
-    completion
-
-  Parameters
-    num_keep    24
-    stop        "<|start_header_id|>"
-    stop        "<|end_header_id|>"
-    stop        "<|eot_id|>"
-
-  License
-    META LLAMA 3 COMMUNITY LICENSE AGREEMENT
-    Meta Llama 3 Version Release Date: April 18, 2024
-    
-    
-    https://www.venta.lv/augstskola/parskati-un-zinojumi
-    
-"""

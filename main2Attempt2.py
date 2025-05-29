@@ -3,7 +3,7 @@ import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 import requests
 import re
-#import json
+import json
 import tiktoken
 import os
 

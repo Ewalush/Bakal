@@ -1,0 +1,7 @@
+[OUTPUT]
+Q: Kā var pieteikties brīvās izvēles kursiem?
+A: <think>
+
+</think>
+
+Pieteikties brīvās izvēles kursiem var, izmantojot elektronisko apmācības vidējus, piemēram, Moodle. Studentiem ir iespēja pieteikties uz kursus, kas ir pieejami šajā platformā, un veikt nepieciešamās darbības, piemēram, iesniegt darbus, izpildīt testus un iegūt vērtējumus. Lai pieteikties, studentam jāievēro noteiktas prasības un jāizpilda kursa prasības, kas ir norādītas studiju kursa aprakstā. Lai iegūtu informāciju par pieejamajiem brīvās izvēles kursiem, studentam jāapskata studiju programmā norādītās iespējas un jāievēro noteikumi, kas attiecas uz kursa iesniegšanu un pabeigšanu.

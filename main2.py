@@ -104,3 +104,5 @@ except Exception as e:
 print("\n[OUTPUT]")
 print(f"Q: {prompt}")
 print(f"A: {answer}")
+
+#https://www.venta.lv/augstskola/parskati-un-zinojumi

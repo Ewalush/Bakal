@@ -1,25 +1,21 @@
 import fitz 
-from sentence_transformers import SentenceTransformer
 import chromadb
 from chromadb.utils.embedding_functions import SentenceTransformerEmbeddingFunction
 import requests
 import re
-import json
+#import json
 import tiktoken
 import os
 
 #predefinesana
 chunk_size = 1000
-prompt = "Kas ir DeepSeekv3?"
+prompt = "Kā pieteikties brīvās izvēles kursiem?"
 
 # Texta satirisana
 def clean_text(text):
     text = re.sub(r'[\x00-\x1F\x7F]', '', text)
-    text = re.sub(r'[^\x20-\x7E]', '', text)
     text = re.sub(r'\s+', ' ', text)
-    text = text.replace("\n", " ").replace("\r", " ")
-    text = text.strip()
-    return text
+    return text.strip()
 
 # Failu mape
 rootFolder = "Faili"
@@ -58,7 +54,7 @@ for fileName in os.listdir(rootFolder):
     # Vardu sadalisana
     word_tokens = cleaned_text.split()
     total_words = len(word_tokens)
-    print(f"Apstradati fails '{fileName}': {total_words} vardi pec satirisanas.")
+    print(f"Apstradats fails '{fileName}': {total_words} vardi pec satirisanas.")
 
     # Dalu sadalisana
     chunks = []
@@ -77,7 +73,7 @@ for fileName in os.listdir(rootFolder):
 results = collection.query(query_texts=[prompt], n_results=3)
 top_results = results['documents']
 
-fullPrompt = f"Context:\n{top_results[0]}\n\nQuestion: {prompt}\nAnswer: /no_think"
+fullPrompt = f"Context:\n{top_results[0]}\n\nQuestion: {prompt}\nAnswer:"
 tokenizer = tiktoken.get_encoding("cl100k_base")  # Approx match for LLaMA
 tokens = tokenizer.encode(fullPrompt)
 print(f"Token count: {len(tokens)}")

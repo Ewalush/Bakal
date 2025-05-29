@@ -6,6 +6,7 @@ import re
 import json
 import tiktoken
 import os
+import time
 
 #predefinesana
 chunk_size = 1000
@@ -26,6 +27,7 @@ client = chromadb.Client()
 collection = client.get_or_create_collection(name="Collection", embedding_function=embeddingFunction)
 
 # Katra faila procesesana
+start = time.perf_counter()
 for fileName in os.listdir(rootFolder):
     filePath = os.path.join(rootFolder, fileName)
     
@@ -68,12 +70,14 @@ for fileName in os.listdir(rootFolder):
     for idx, chunk in enumerate(chunks):
         chunk_id = f"{fileName}_chunk_{idx}"
         collection.add(documents=[chunk], ids=[chunk_id])
-
+end = time.perf_counter()
+elapsed = end - start
+print(f'Pagāja: {elapsed:.6f} sekundes')
 
 results = collection.query(query_texts=[prompt], n_results=3)
 top_results = results['documents']
 
-fullPrompt = f"Context:\n{top_results[0]}\n\nQuestion: {prompt}\nAnswer:"
+fullPrompt = (f"Context:\n{top_results[0]}\n\nQuestion: {prompt}\nAnswer:")
 tokenizer = tiktoken.get_encoding("cl100k_base")  # Approx match for LLaMA
 tokens = tokenizer.encode(fullPrompt)
 print(f"Token count: {len(tokens)}")

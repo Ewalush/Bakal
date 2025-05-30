@@ -1,0 +1,88 @@
+User query "Ko dara studentu padome?" without RAG:
+AnythingLLM response:
+Esu gatavs sniegti palīdzību studentiem dažādos aspektos, piemēram:
+
+Apmācība un uzdevumu palīdzība (matemātika, valodas, programmēšana utt.);
+Studiju plānošana (pamatuzdevumu izvēle, eksāmena sagatavošana);
+Rīcības noteikšana (kā veikt pētījumu, izmantot bibliotēku, pieklausīties līdzekļiem);
+Psiholoģiska atbalsts (stresu pārvaldīšana, motivācijas uzturēšana).
+Vai vēlies konkrētā jomā palīdzību? 😊
+GPT4ALL response(Qwen3 model error, unsuported, using llama 3 8b):
+A classic Latvian phrase!
+"Ko dara studentu padome?" roughly translates to "What do students' thoughts say?"
+In other words, it's a playful way of asking what are the students thinking or planning?
+
+openwebui response:
+Studentai dažnai pasinaudoja įvairiais būdais, kad gautų pagalbą ar padėti kitų studentų, naudoti žinias ir išgyventi mokymosi procesą. Štai keletas pagrindinių veiksmų, kuriais studentai gali padėti sau ar kitus: 
+1. Pagalba studentams: 
+    Mokymosi pagalba:   
+         Konsultacijos su mokytojais: Naudojasi konsultacijomis („office hours“), kad išspręstų sunkius klausimus.  
+         Tutoriai: Gali pasirinkti kvalifikuotus tutorius, kurie padeda išaiškinti sudėtingus tematus.  
+         Studijų grupės: Sujungia studentus, kurie moko vieni kitus, pavyzdžiui, per paskaitas ar prieš egzaminus.
+    Finansinė pagalba:   
+         Mokslinių stipendijų: Siekia stipendijų, kurios padeda išlaikyti mokslą.  
+         Skolos ir išteklių valdymas: Mokosi valdyti skolas ar išteklius, kad būtų finansiškai stabilus.
+    Psichologinė pagalba:   
+         Konsultacijos su psichologais: Naudosi psichologinėmis konsultacijomis, jei pasijunta stresu, depresija ar kitos problemas.  
+         Stress management: Mokosi tvarkytis su stresu, tarpdaryti laiką ir išlaikyti sveikatą.
+    Kultūrinė ir socialinė integracija:   
+         Studentų draugijos: Įstoja į studentų draugijas, kad susipažintų su kitais studentais ir dalyvautų įvairiais renginiais.  
+         Kultūrinės veiklos: Dalyvauja kultūrinėse, sportinėse ar humanitarinėse veiklose, kad išvengtų izoliacijos.
+2. Pagalba kitoms žmonėms:
+     Mentorystė:  
+         Studentai gali tapti mentoriais, padedant jaunesnėms ar naujai atvykusiam studentams.
+     Voluntariato veikla:  
+         Dalyvauja įvairiose įmonėse, draugijose ar socialiniuose projektuose, padedant kitiems.
+     Mokymo padėjimas:  
+         Padeda mokytis kitų studentų, pavyzdžiui, per tarpakursį ar konsultacijas. 
+     Kultūrinės ir kalbinės pagalbos:  
+         Padeda išmokti kalbų, kultūros ar istorijos, jei yra tarpininkavimo galimybė.
+3. Šaltiniai, kurie gali padėti: 
+     Studentų draugijos: Dažnai siūlo pagalbą, informaciją ir ryšį su konsultacijomis.  
+     Mokyklos tarnybos: Pateikia informaciją apie stipendijas, finansinį pagalbą ir psichologinę pagalbą.  
+     Internetas ir mokymo platformos: Naudosi įvairiais mokymosi platformomis (pvz., Coursera, Khan Academy) ar pasitarkti su kitais mokiniais.
+Svarbu: 
+Studentai dažnai naudoja tarpusavyje pagalbą, nes tai skatina kolektyvumą ir išgyvenimą. Jei jaučiasi išvengti, svarbu pasikonsultuoti su konsultantu, psichologu ar draugais.   
+Jeigu nori, galiu padėti rasti konkretų pagalbos būdą, priklausomai nuo tavo poreikio! 😊 
+
+Python code created response:
+Jūsų klausimas "Ko dara studentu padome?" gali būti interpretuojamas keliais būdais, priklausomai nuo konteksto. Štai keletas galimų aiškinimų:
+1. **Studentai naudojasi pagalba (akademiniu ar socialiniu požiūriu):**
+   Studentai gali naudoti pagalbos išteklius, pvz., konsultacijas, mokymo grupes, bibliotekų išteklius arba psichologinę pagalbą, kad padidėtų mokymosi efektyvumą ar išvengtų streso. Tai gali apimti ir mokymąsi iš kitų studentų, tarp jų mokymo padėgėjų (peer tutoring).
+2. **Studentai suteikia pagalbą:**
+   Kai kurie studentai gali tapti pagalbos teikėjais, pvz., mokantis kitų studentų, suteikiant patarimus ar konsultuojant mokymosi procesą. Tai dažnai susiję su mokymo padėgėjų programomis.
+3. **Klausimas apie pagalbos tikslą:**
+   Galima laikyti, kad klausimas apie tai, ką studentai daro, gauti pagalbą, t. y. kaip jie išnaudoja pagalbą mokymuisi, išvengiant sunkumų ar pasiekiant savo tikslus.
+Jei norėtumėte, galite pateikti daugiau konteksto, kad galėčiau suteikti tiksliau atsakymą!
+
+User query "Can you give me a technical report summary on deepseekv3?" with RAG:
+AnythingLLM response:
+Pārstāvēšana: Pārstāvē studējošo tiesības un interešes, nodrošinot tos ietekmes uz augstskolas lēmumu pieņemšanu.
+Darbība saskaņā ar nolikumu: Darbojas saskaņā ar savu izstrādāto nolikumu, kas apstiprināts VeA Senāta.
+Lēmumu pieņemšana: Iespēja piedalīties akadēmiskajos un administratīvos procesos, iesaistīties studiju programmā un risināt studējošo intereses.
+Informācijas izplatīšana: Iespēja informēt studējošos par VeA darbību, izglītības programmām un citām svarīgām lietām.
+Studentu padome ir neatkarīga un vēlēta institūcija, kas nodrošina studējošo iesaisti augstskolas valdīšanā.
+
+GPT4ALL response(Qwen3 model error, unsuported, using llama 3 8b):
+﻿Based on the provided excerpts from Latvian documents, it appears that "Ko dara studentu padome?" is a question asking what does the Student Council do?
+In the context of VeA (Vestabule Augstskola), the Student Council seems to be an elected and independent representative body for students' rights and interests. According to the excerpts:
+The Student Council has its own autonomy and operates according to its own rules, which are approved by the VeA Senate.
+It is responsible for defending and representing student interests.
+In another context, it appears that the Student Council also plays a role in organizing study-related activities, such as creating work groups and expert committees.
+
+openwebui response:
+Studentu padomes funkcijas nav tīri skaidri izteiktas sniegtajā kontekstā. Dota informācija attiecas uz studiju programmām, pedagoģiskajām metodēm un studentu atbildību, tomēr neiekļauj specifiskas studentu padomes aktivitātes . Ja vēlies iegūt papildu informāciju par studentu padomes lomu, varat izklāstīt, kādas ir jūsu universitātes vai institūta specifiskas prakses.
+
+Python code created response:
+Studentu padome (student council) ir svarīga daļa studiju programmas struktūras, kas veicina studējošo un mācībspēku abpusējo cieņu un radošu sadarbību. Tās galvenās funkcijas ietver:
+
+1. **Kolaborācija ar mācībspēku** – studentu padome sadarbojas ar docētājiem, lai izveidotu pozitīvu emocionālo fonu un efektīvu mācīšanas procesu.
+2. **Mācīšanas metodes un darba formu pielāgošana** – tās atspoguļo dažādas mācīšanas metodes un darba formas, pielāgotas konkrētām situācijām.
+3. **Patstāvības veicināšana** – piedāvā studentiem iespējas patstāvīgi demonstrēt zināšanas un prasmes, gan individuāli, gan grupā.
+4. **Atgriezeniskā saite un atbalsts** – studentu padome nodrošina atgriezenisko saiti, un, ja nepieciešams, sniedz mācīšanas procesa uzlabošanas atbalstu.
+5. **Vērtēšanas procesā** – tās ir daļa no vērtēšanas sistēmas, kas nodrošina, ka vērtēšana ir konsekventa, taisnīga un piemērojama visiem studentiem.
+6. **Promocijas procesā** – doktora studiju programmas studentu padome ir saistīta ar promocijas iespējām un novērtējumu.
+
+Studentu padome tādējādi veicina studējošo patstāvību, sadarbību ar mācībspēku un nodrošina augstskolas noteiktās prasības pārvaldīšanu.
+
+Notes: Not including qwen3 thinking part. GPT4ALL was the only system that used gpu, resulting in 5x faster response generation

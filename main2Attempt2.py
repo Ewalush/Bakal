@@ -10,7 +10,7 @@ import time
 
 #predefinesana
 chunk_size = 1000
-prompt = "Kā pieteikties brīvās izvēles kursiem?"
+prompt = "Ko dara studentu padome?"
 
 # Texta satirisana
 def clean_text(text):
@@ -77,7 +77,7 @@ print(f'Pagāja: {elapsed:.6f} sekundes')
 results = collection.query(query_texts=[prompt], n_results=3)
 top_results = results['documents']
 
-fullPrompt = (f"Context:\n{top_results[0]}\n\nQuestion: {prompt}\nAnswer:")
+fullPrompt = (f"Context:\n{top_results}\n\nQuestion: {prompt}\nAnswer:")
 tokenizer = tiktoken.get_encoding("cl100k_base")  # Approx match for LLaMA
 tokens = tokenizer.encode(fullPrompt)
 print(f"Token count: {len(tokens)}")
